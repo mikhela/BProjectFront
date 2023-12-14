@@ -1,0 +1,256 @@
+@import url(variable.css);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a 
+{
+    text-decoration: none;
+    color:  white;
+}
+body
+{
+    background-color: var(--bgColor);
+}
+@font-face {
+    font-family: "LogoFont";
+    src: url(Fonts/Shizuru/Shizuru-Regular.ttf);
+}
+nav{ width: 100%; min-height: 600px;}
+.navbar__txt
+{
+    width: 1500px;
+    max-width: 100%;
+    min-height: 100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.Logo
+{
+    color: var(--LogoColor);
+    font-family: "LogoFont";
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar__image
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+    margin: auto;
+    padding: 20px;
+    background-image: url(https://t4.ftcdn.net/jpg/05/44/54/69/360_F_544546950_Xi80k2ppry7rqKQQYsSNVmuaAILUiki9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Form__ForRegistrationAndLogin
+{
+    width: 350px;
+    max-width: 100%;
+    min-height: 400px;
+    position: relative;
+    top: 150px;
+    right: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -2px 9px 24px -2px rgba(128,128,128,0.61);
+    -webkit-box-shadow: -2px 9px 24px -2px rgba(128,128,128,0.61);
+    -moz-box-shadow: -2px 9px 24px -2px rgba(128,128,128,0.61);
+}
+.Form__ForRegistrationAndLogin h5
+{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 25px;
+}
+.Form__ForRegistrationAndLogin .PHR
+{
+    background-color: #420D09;
+    width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+.Form__ForRegistrationAndLogin .PHR:hover
+{
+    background-color: #8B4513;
+}
+.Form__ForRegistrationAndLogin .desc
+{
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 25px;
+}
+section
+{
+    width: 100%;
+    max-width: 100%;
+    min-height: 10vh;
+}
+.mysection
+{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    max-width: 100%;
+    min-height: 20vh;
+    top: -50px;
+    left: 82px;
+    position: relative;
+}
+.text__first
+{
+    position: relative;
+    top: 50px;
+    width: 340px;
+    max-width: 100%;
+    padding: 10px;
+    color: rgba(35, 34, 34, 0.551);
+}
+header
+{
+    width: 100%;
+    max-width: 100%;
+    min-height: 170vh;
+}
+
+.header
+{
+    margin-top: 8%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 60vh;
+    background-image: url("images/ეკო_სლაიდი.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.FlexBox
+{
+    display: flex;
+    width: 1500px;
+    max-width: 100%;
+    min-height: 70vh; 
+    margin: auto;
+    margin-top: 100px;
+}
+.Flex__First
+{
+    width: 400px;
+    min-height: 70vh;
+}
+.Flex__First img{  width: 400px; max-width: 100%; min-height: 360px;}
+.Flex__First .card__FLS {margin-top: 40px;}
+
+
+
+
+
+@media only screen and (max-width: 600px)
+{
+    .card__FLF {width: 100%;} .card__FLS {width: 100%;}
+    .header
+    {
+        background-image: url("images/მევენახეობა_მეღვინეობა_ივანე_ჯავახიშვილი.jpg");
+    }
+    .Flex__First
+    {
+        width: 100%;
+        min-height: 360px;
+        display: block !important;
+    }
+    .Flex__First img
+    {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media only screen and (max-width: 1025px)
+{
+    .FlexBox
+    {
+        display: block !important;
+        width: 800px;
+    }
+    .Flex__First .card__FLS {margin-top: 0px;}
+    .Flex__First
+    {
+        width: 100%;
+        min-height: 360px;
+        display: flex;
+    }
+    .Flex__First img
+    {
+        margin-top: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 1472px)
+{
+.Form__ForRegistrationAndLogin
+{
+    top: 0px !important;
+}
+}
+@media only screen and (max-width: 930px)
+{
+    section
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .navbar__image
+    {
+        display: block;
+        justify-content: none;
+    }    
+.Logo
+{
+    text-align: center;
+}
+.Form__ForRegistrationAndLogin
+{
+    position: relative;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+}
+.navbar__image
+{
+    position: relative;
+    top: 70px;
+}
+}
+@media only screen and (max-width: 445px) {
+    .navbar__image
+    {
+        display: block;
+        justify-content: none;
+    }  
+
+    .Form__ForRegistrationAndLogin
+    {
+        width: 270px;
+        position: relative;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+    }
+    .Form__ForRegistrationAndLogin .PHR {
+        width: 240px;
+    }
+    }

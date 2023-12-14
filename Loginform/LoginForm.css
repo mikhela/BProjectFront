@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "SCode";
+    src: url(../Fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #8B4513;
+}
+
+header
+{
+    width: 100%;
+    min-height: 100vh;
+}
+
+header .header
+{
+    display: flex;
+    width: 1500px;
+    max-width: 100%;
+    min-height: 80vh;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    box-shadow: 0px -1px 47px -8px rgba(69,31,31,0.61);
+    -webkit-box-shadow: 0px -1px 47px -8px rgba(69,31,31,0.61);
+    -moz-box-shadow: 0px -1px 47px -8px rgba(69,31,31,0.61);
+    border-radius: 20px;
+}
+
+.header__left
+{
+    width: 750px;
+    height: 80vh;
+}
+
+.header-image
+{
+    width: 100%;
+    min-height: 80vh;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.header__right
+{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 750px;
+    height: 80vh; 
+    background: linear-gradient(135deg, #edebeb 0%, #D2691E 30%, #984b14 70%);
+
+}
+.form
+{
+    width: 100%;
+    min-height: 60vh;
+    margin: auto;
+    margin-top: 50px;
+}
+.form h5
+{
+    font-family: "SCode";
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.764);
+    padding-left: 50px;
+}
+
+.inner__form
+{
+    width: 90%;
+    max-width: 100%;
+    min-height: 60vh;
+    padding-left: 50px;
+}
+.form-group 
+{
+    margin-top: 30px;
+    display: block;
+}
+
+.form-group label
+{
+    font-family: "SCode";
+    font-size: 20px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.form-group input
+{
+    font-size: 10px;
+    width: 500px;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.SendInfo
+{
+    position: relative;
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-family: "SCode";
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    transition: .6s;
+}
+
+.SendInfo:hover
+{
+    background-color: #955426;
+    color: black;
+}
+
+@media only screen and (max-width: 1025px)
+{
+    .header__left
+    {
+        display: none;
+    }
+    .header__right
+    {
+        border-radius: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .inner__form
+    {
+        position: relative;
+        top: 60px;
+        width: 500px;
+        min-height: 60vh;
+        padding-left: 0;
+        margin: auto;
+    }
+    .form h5
+    {
+        padding-left: 0px;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 579px)
+{
+    .form-group label {
+        font-size: 18px;
+    }
+    .form-group input {
+        width: 342px;
+    }
+}
+@media only screen and (max-width: 380px)
+{
+    .form-group input {
+        width: 250px;
+    }
+    .form-group label {
+        font-size: 15px;
+    }
+}

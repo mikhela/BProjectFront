@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1472px)
+{
+.Form__ForRegistrationAndLogin
+{
+    top: 0px !important;
+}
+}
+@media only screen and (max-width: 930px)
+{
+    section
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .navbar__image
+    {
+        display: block;
+        justify-content: none;
+    }    
+.Logo
+{
+    text-align: center;
+}
+.Form__ForRegistrationAndLogin
+{
+    position: relative;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+}
+.navbar__image
+{
+    position: relative;
+    top: 70px;
+}
+}
+@media only screen and (max-width: 445px) {
+    .navbar__image
+    {
+        display: block;
+        justify-content: none;
+    }  
+
+    .Form__ForRegistrationAndLogin
+    {
+        width: 270px;
+        position: relative;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+    }
+    .Form__ForRegistrationAndLogin .PHR {
+        width: 240px;
+    }
+    }

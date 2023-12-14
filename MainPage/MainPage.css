@@ -1,0 +1,86 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "MainFont";
+}
+body
+{
+    width: 100%;
+}
+@font-face {
+    font-family: "LogoFont";
+    src: url(../Fonts/Shizuru/Shizuru-Regular.ttf);
+}
+
+@font-face {
+    font-family: "MainFont";
+    src: url(../Fonts/bpg_nino_mtavruli_normal_[FONTS.GE]/bpg_nino_mtavruli_normal.ttf);
+}
+.Logo 
+{
+    font-family: "LogoFont";
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.logout
+{
+    font-size: 20px;
+    padding: 6px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+.container
+{
+    max-width: 1300px;
+}
+.bg-body-tertiary
+ {
+    background-color: #a34e11d2 !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+}
+
+#navbarText
+{
+    gap: 30px;
+}
+.navbar-nav
+{
+    gap: 40px;
+}
+.nav-item .nav-link
+{
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    padding-top: 15px;
+}
+.nav-item .nav-link:hover
+{
+    font-weight: 900;
+}
+
+.nav-item .active
+{
+    font-weight: 900;
+    margin-left: 30px;
+    color: white !important;
+}
+
+@media only screen and (max-width: 992px)
+{
+.navbar-nav
+{
+    width: 100%;
+    margin: 0;
+}
+}
+
+
