@@ -18,6 +18,17 @@ body
     font-family: "MainFont";
     src: url(../Fonts/bpg_nino_mtavruli_normal_[FONTS.GE]/bpg_nino_mtavruli_normal.ttf);
 }
+@font-face {
+	font-family: "MainFontTitle";
+	src: url(../Fonts/bpg_nino_mtavruli_bold/bpg_nino_mtavruli_bold.ttf);
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000; /* Adjust the z-index as needed */
+  }
 .Logo 
 {
     font-family: "LogoFont";
@@ -78,7 +89,8 @@ body
 
 @media only screen and (max-width: 991px)
 {
-	.logout
+.Logo { color: black; }
+.logout
 {
     font-size: 20px;
     padding: 6px;
@@ -98,10 +110,11 @@ body
 {
     margin-left: 0px;
 	margin-top: 10px;
+	color: white !important;
 }
 .nav-item .nav-link
 {
-   
+	color: white;
     padding-top: 0px;
 }
 }
@@ -116,10 +129,12 @@ body
 .header__container
 {
 	width: 100%;
-	margin-top: 100px;
 }
 .banner_wrapper{
 	position: relative;
+	width: 1200px;
+	max-width: 100%;
+	margin: auto;
 }
 .next_arrow{
 	position: absolute;
@@ -279,9 +294,60 @@ input+input:checked + label+.banner_box{
 	max-width: 100%;
 }
 
+
+
+.header__container__third
+{
+	width: 100%;
+	margin-top: 70px;
+}
+
+.header__container__inner__third
+{
+	width: 1200px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.header__container__third span
+{
+	color: black;
+	font-size: 20px;
+	font-weight: 800;
+	font-family: "MainFontTitle";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1245px)
 {
-	
+.header__container
+{
+	width: 100%;
+	margin-top: 100px;
+}
 .row__dContainer
 {
 		display: flex;
