@@ -32,15 +32,16 @@ body
     color: white;
     border-radius: 50%;
     text-align: center;
-
+	transition: all 0.3 ease-in-out;
 }
+
 .container
 {
     max-width: 1200px;
 }
 .bg-body-tertiary
  {
-    background-color: #a34e11d2 !important;
+    background-color: rgb(45 24 9 / 82%) !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
