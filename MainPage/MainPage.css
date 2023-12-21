@@ -8,6 +8,7 @@
 body
 {
     width: 100%;
+	background-color: #4E312D;
 }
 @font-face {
     font-family: "LogoFont";
@@ -260,7 +261,7 @@ input+input:checked + label+.banner_box{
 .header__first__container
 {
 	width: 100%;
-	min-height: 80vh;
+	min-height: 68vh;
 	margin-top: 100px;
 }
 
@@ -286,6 +287,8 @@ input+input:checked + label+.banner_box{
 	width: 200px;
 	max-width: 100%;
 	min-height: 300px;
+	border: 2px solid white;
+	border-radius: 10px;
 }
 
 #Card
@@ -336,16 +339,21 @@ input+input:checked + label+.banner_box{
 	width: 1200px; /* Adjusted width for big-box */
 	height: 400px;
 	max-width: 100%;
-	background-color: #f2f2f2;
-	border: 2px solid black;
 	margin: auto;
 	padding: 10px;
+	border-radius: 20px;
+	color: white;
+	box-shadow: 2px 13px 43px -2px rgba(0,0,0,0.58);
+	-webkit-box-shadow: 2px 13px 43px -2px rgba(0,0,0,0.58);
+	-moz-box-shadow: 2px 13px 43px -2px rgba(0,0,0,0.58);
+	margin-bottom: 60px;
   }
 
-  .big-box img {
-	width: 150px;
-	height: 150px;
+  .big-box #bigImg {
+	width: 250px;
+	height: 100%;
 	margin-right: 20px;
+	border-radius: 20px;
   }
 
   .scrollable-container {
@@ -359,31 +367,97 @@ input+input:checked + label+.banner_box{
 	padding-bottom: 10px;
 	margin-bottom: 20px;
 	-webkit-overflow-scrolling: touch;
+	
   }
 
   .small-box {
-	width: 90px; /* Adjusted width for small-box */
-	height: 80px;
+	max-width: 150px; /* Adjusted width for small-box */
+	min-height: 190px;
 	display: inline-block;
 	margin-right: 20px;
 	cursor: pointer;
-	border: 1px solid black;
+	border-radius: 20px;
+	box-shadow: 2px 13px 43px -2px rgba(0,0,0,0.58);
+	-webkit-box-shadow: 2px 13px 43px -2px rgba(0,0,0,0.58);
+	-moz-box-shadow: 2px 13px 43px -2px rgba(0,0,0,0.58);
   }
+.small-box .littleImg
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+}
+.big-box #summary
+{
+	max-width: 500px;
+	font-size: 13px;
+}
+
+
+.big-box .contentBox
+{
+	max-width: 60%;
+	height: 80%;
+	margin-left: 100px;
+}
 
 
 
+@media only screen and (max-width:1125px)
+{
+	.small-box
+{
+	width: 100px;
+	height: 100px;
+}
+}
 
+@media only screen and (max-width: 600px)
+{
+.big-box #bigImg
+{
+	width: 30%;
+	height: 70% !important;
+}
+.big-box .contentBox
+{
+	margin-left: 0;
+	min-height: 70%;
+}
+.big-box #title
+{
+	font-size: 14px !important;
+}
+.big-box #text
+{
+	font-size: 11px !important;
+}
+.big-box #summary
+{
+	font-size: 8px !important;
+}
+}
 
+@media only screen and (max-width: 850px)
+{
+.big-box .contentBox
+{
+	margin-top: 40px;
+	margin-left: 0;
+}
+.big-box #summary
+{
+	max-width: 350px;
+	font-size: 10px;
+}
+.big-box #bigImg
+{
+	width: 30%;
+	height: 80%;
+	object-fit: cover;
+}
 
-
-
-
-
-
-
-
-
-
+}
 
 @media only screen and (max-width: 1245px)
 {
