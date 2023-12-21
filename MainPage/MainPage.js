@@ -1,5 +1,7 @@
 
 
+// heart icon
+
 
 
 const heartIcons = document.querySelectorAll('#Heart');
@@ -24,3 +26,8 @@ heartIcons.forEach((heartIcon, index) => {
     heartIcon.classList.add('clicked');
   }
 });
+
+
+// Cards functional
+
+
