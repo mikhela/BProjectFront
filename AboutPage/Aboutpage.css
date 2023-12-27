@@ -1,0 +1,128 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "MainFont";
+}
+
+body
+{
+    width: 100%;
+	background-color: #4E312D;
+}
+@font-face {
+    font-family: "LogoFont";
+    src: url(../Fonts/Shizuru/Shizuru-Regular.ttf);
+}
+
+@font-face {
+    font-family: "MainFont";
+    src: url(../Fonts/bpg_nino_mtavruli_normal_[FONTS.GE]/bpg_nino_mtavruli_normal.ttf);
+}
+@font-face {
+	font-family: "MainFontTitle";
+	src: url(../Fonts/bpg_nino_mtavruli_bold/bpg_nino_mtavruli_bold.ttf);
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000; /* Adjust the z-index as needed */
+  }
+.Logo 
+{
+    font-family: "LogoFont";
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.logout
+{
+    font-size: 20px;
+    padding: 6px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+	transition: all 0.3 ease-in-out;
+}
+
+.container
+{
+    max-width: 1200px;
+}
+.bg-body-tertiary
+ {
+    background-color: rgb(45 24 9 / 82%) !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+}
+
+#navbarText
+{
+    gap: 30px;
+}
+.navbar-nav
+{
+    gap: 40px;
+}
+.nav-item .nav-link
+{
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    padding-top: 15px;
+}
+.nav-item .nav-link:hover
+{
+    font-weight: 900;
+}
+
+.nav-item .active
+{
+    margin-left: 30px;
+    color: white !important;
+}
+
+@media only screen and (max-width: 991px)
+{
+.Logo { color: black; }
+.logout
+{
+    font-size: 20px;
+    padding: 6px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+	margin-bottom: 10px;
+    margin-left: 5px;
+}
+.navbar-nav
+{
+    width: 100%;
+    margin: 0;
+	gap: 0;
+}
+.nav-item .active
+{
+    margin-left: 0px;
+	margin-top: 10px;
+	color: white !important;
+}
+.nav-item .nav-link
+{
+	color: white;
+    padding-top: 0px;
+}
+}
+
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}

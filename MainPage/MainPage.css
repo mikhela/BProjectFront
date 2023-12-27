@@ -246,7 +246,7 @@ input+input:checked + label+.banner_box{
 {
 		display: none;
 		font-weight: 900;
-		color: white;
+		color: wheat;
 		position: absolute;
 		top: 0px;
 		right: 20px;
@@ -355,7 +355,7 @@ input+input:checked + label+.banner_box{
 {
 	width: 1200px;
 	max-width: 100%;
-	margin: 40px auto;
+	margin: 100px auto;
 	box-shadow: -1px 4px 26px 14px rgba(0,0,0,0.75);
 	-webkit-box-shadow: -1px 4px 26px 14px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 4px 26px 14px rgba(0,0,0,0.75);
