@@ -27,7 +27,9 @@ heartIcons.forEach((heartIcon, index) => {
   }
 });
 
+//save localstorage info
 
-// Cards functional
+
+
 
 

@@ -1,25 +1,37 @@
-const data = {
-    "photo_url": "../images/Libraryimage.jpg"
-};
+const loginForm = document.getElementById('loginForm');
 
-const photoUrl = data.photo_url;
+loginForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
 
-console.log(photoUrl);
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
-fetch('LoginForm.json')
-    .then(response => response.json())
-    .then(data => {
-        const photoUrl = data.photo_url;
+    const userData = {
+        EmailAddress: email,
+        Password: password
+    };
 
-        const image = document.createElement('img');
+    try {
+        const response = await fetch('https://localhost:7223/api/Users/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(userData)
+        });
 
-        image.src = photoUrl;
+        if (!response.ok) {
+            const errorMessage = await response.text();
+            // Handle error message display or other actions
+            alert(errorMessage);
+            return;
+        }
 
-        image.classList.add('header-image'); // Replace 'header-image' with your desired class name
+        localStorage.setItem('userEmail', email);
 
-        const headerLeft = document.getElementById('headerLeft');
-        headerLeft.appendChild(image);
-    })
-    .catch(error => {
-        console.log('Error fetching data:', error);
-    });
+        window.location.href = '../MainPage/MainPage.html'; // Replace with your desired path
+    } catch (error) {
+        console.error('Error:', error);
+
+    }
+});

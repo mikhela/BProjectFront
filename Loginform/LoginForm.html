@@ -14,27 +14,21 @@
                 <!-- Image will be added here -->
             </div>
             <div class="header__right">
-                <div class="form">
-                    <h5>LOGIN</h5>
-                    <div class="inner__form">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                          </div>
-                         
-                          <button class="SendInfo">Submit</button>
-                    </div>
-                  
-                </div>
+                <form id="loginForm" class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br>
+                    
+                    <input class="SendInfo" type="submit" value="Login">
+                </form>
             </div>
         </div>
     </header>
-
-    <script src="LoginForm.js" defer></script>
+    
+    <script src="LoginForm.js"></script>
+    <script src="FetchPhotosLogin.js" defer></script>
 </body>
 </html>
 

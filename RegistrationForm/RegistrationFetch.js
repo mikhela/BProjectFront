@@ -1,27 +1,36 @@
-let SendInfo = document.querySelector(".SendInfo");
-let EmailValue = document.querySelector("#EmailValue");
-let PasswordValue = document.querySelector("#PasswordValue");
+document.getElementById('registrationForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-function Registration(email, password) {
-    const body = {
-        "EmailAddress": email,
-        "Password": password,
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    const formData = {
+        EmailAddress: email,
+        Password: password
     };
 
-    fetch('https://localhost:7223/api/Users/register', {
-        method: 'POST',
-        body: JSON.stringify(body),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        alert('User added successfully');
-    })
-    .catch(error => console.error('Error:', error));
-}
+    try {
+        const response = await fetch('https://localhost:7223/api/Users/registration', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
 
-SendInfo.addEventListener('click', function () {
-    Registration(EmailValue, PasswordValue);
+        if (response.ok) {
+            const result = await response.text(); // Read the response as text if it's not JSON
+            console.log('Registration successful:', result);
+            alert('Registration successful');
+            
+            localStorage.setItem('userEmail', email);
+
+            window.location.href = '../MainPage/MainPage.html';
+        } else {
+            throw new Error('Registration failed');
+        }
+    } catch (error) {
+        console.error('Registration error:', error.message);
+        alert('Registration failed');
+    }
 });

@@ -60,31 +60,14 @@ header .header
     background: linear-gradient(135deg, #edebeb 0%, #D2691E 30%, #984b14 70%);
 
 }
-.form
+
+.form-group 
 {
-    width: 100%;
+    width: 500px;
+    max-width: 100%;
     min-height: 60vh;
     margin: auto;
     margin-top: 50px;
-}
-.form h5
-{
-    font-family: "SCode";
-    font-size: 25px;
-    color: rgba(0, 0, 0, 0.764);
-    padding-left: 50px;
-}
-
-.inner__form
-{
-    width: 90%;
-    max-width: 100%;
-    min-height: 60vh;
-    padding-left: 50px;
-}
-.form-group 
-{
-    margin-top: 30px;
     display: block;
 }
 
@@ -117,6 +100,7 @@ header .header
     color: white;
     border: none;
     transition: .6s;
+    cursor: pointer;
 }
 
 .SendInfo:hover
